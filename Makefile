@@ -11,8 +11,7 @@ VPATH?=$(PWD)
 endif
 
 build:
-	cp -rf rootfs/* squashfs-root/*
-	./pifii-rom.sh
+	sudo cp -rf rootfs/* squashfs-root/
 
 run:
 	sudo docker run -d --restart=always  --name tftp -v $(VPATH):/mnt -p 69:69/udp sinzuotftp:1.0

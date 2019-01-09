@@ -8,5 +8,5 @@ size2=`expr $offset2 - $offset1`
 #echo $offset1 " " $offset2 " " $size2
 dd if=$1 of=kernel.bin bs=1 ibs=1 count=$offset1
 dd if=$1 of=secondchunk.bin bs=1 ibs=1 count=$size2 skip=$offset1
-unsquashfs secondchunk.bin 
+sudo unsquashfs secondchunk.bin 
 
