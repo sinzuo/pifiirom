@@ -33,6 +33,6 @@ clean:
 	rm -rf kernel.bin
 	rm -rf secondchunk.bin
 	rm -rf pifii-rom.bin
-
+	rm -rf root.squashfs
 pull:
 	git pull
