@@ -28,6 +28,11 @@ enter:
 push:
 	git push --all
 	git push --tags
+clean:
+	sudo rm -rf squashfs-root
+	rm -rf kernel.bin
+	rm -rf secondchunk.bin
+	rm -rf pifii-rom.bin
 
 pull:
 	git pull
